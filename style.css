@@ -23,5 +23,12 @@ ul{
 }
 
 li{
-   margin:4px 0; 
+   margin:4px 0;
+   .project-screenshot {
+    display: block;
+    width: 450px;
+    max-width: 100%;
+    height: auto;
+    margin: 12px auto;
+}
 }
