@@ -131,6 +131,17 @@ li{
     border-radius: 12px;
 }
 
+.profile-photo{
+    display: block;
+    width: 220px;
+    max-width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 3px solid gold;
+    border-radius: 50%;
+    margin: 0 auto 24px;
+}
+
 footer{
     margin-top: 24px;
     padding-top: 20px;
@@ -157,14 +168,4 @@ footer{
     nav a{
         padding: 10px 16px;
     }
-    .profile-photo{
-    display: block;
-    width: 220px;
-    max-width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border: 3px solid gold;
-    border-radius: 50%;
-    margin: 0 auto 24px;
-}
 }
