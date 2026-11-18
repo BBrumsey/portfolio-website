@@ -1,34 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
-    background-color: rgb(34, 33, 33);
-    color: gold;
-    font-family:monospace;
+    margin: 0;
+    padding: 32px 16px;
+    background-color: #10151d;
+    color: #e7edf4;
+    font-family: monospace;
     font-size: 18px;
+    line-height: 1.7;
     text-align: center;
 }
 
+.page-container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #1c2531;
+    border: 1px solid #526c83;
+    border-radius: 48px;
+}
+
 a{
-    color:white;
+    color: lightblue;
     text-decoration: none;
 }
 
 a:hover{
-    color:lightblue;
+    color: gold;
     text-decoration: underline;
 }
 
+a:focus-visible{
+    outline: 3px solid gold;
+    outline-offset: 5px;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li{
+    margin: 0;
+}
+
+nav a{
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid lightblue;
+    border-radius: 999px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a[aria-current="page"]{
+    background-color: gold;
+    border-color: gold;
+    color: #10151d;
+    text-decoration: none;
+}
+
+header{
+    margin-top: 36px;
+    padding: 36px 0;
+    border-top: 2px solid gold;
+    border-bottom: 2px solid gold;
+}
+
+h1{
+    margin: 0;
+    color: gold;
+    font-size: clamp(32px, 6vw, 56px);
+    line-height: 1.2;
+}
+
+h2{
+    color: gold;
+}
+
+h3{
+    color: lightblue;
+    font-size: 24px;
+}
+
+.role{
+    color: lightblue;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+p{
+    max-width: 65ch;
+    margin: 20px auto;
+    overflow-wrap: anywhere;
+}
+
+section{
+    padding: 28px 0;
+}
+
 ul{
-    list-style-position: inside;
     padding-left: 0;
-    margin: 10px 0;
+    list-style-position: inside;
 }
 
 li{
-   margin:4px 0;
-   .project-screenshot {
+    margin: 4px 0;
+}
+
+.project-list{
+    margin: 0;
+    list-style: none;
+}
+
+.project-screenshot{
     display: block;
     width: 450px;
     max-width: 100%;
     height: auto;
-    margin: 12px auto;
+    margin: 20px auto;
+    border: 2px solid lightblue;
+    border-radius: 12px;
 }
+
+footer{
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #526c83;
+    color: lightblue;
+    font-size: 15px;
+}
+
+@media (max-width: 600px){
+    body{
+        padding: 16px 12px;
+        font-size: 16px;
+    }
+
+    .page-container{
+        padding: 28px 18px;
+        border-radius: 28px;
+    }
+
+    nav ul{
+        gap: 8px;
+    }
+
+    nav a{
+        padding: 10px 16px;
+    }
 }

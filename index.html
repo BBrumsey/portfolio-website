@@ -1,49 +1,63 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Byron Jones | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-<html>
+<body>
+    <div class="page-container">
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Résumé</a></li>
+                <li><a href="youtube.html">YouTube</a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/byron-jones-443314183/">
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-    <head>
-        
-        <!--Documented below is my about me page-->
-        <title>Portfolio Website</title>
-        <link rel="stylesheet"  href="style.css">
-    
-    </head>
-
-    <body>
         <header>
-            <h1>My Homepage</h1>
+            <h1>Byron Jones</h1>
+            <p class="role">Game Designer &amp; Developer</p>
 
             <p>Hello. My name is Byron Jones. Having recently graduated with my Associate's Degree in Computer Science, I have started to pursue my bachelor's in Digital Game Development at City College of New York. During my two terms here at CCNY, I've developed games, created 3D assets and worked in a team of 3 building a game. One thing that I enjoyed building was the layout of the level.</p>
-            
+        </header>
+
         <main>
             <section>
                 <h2>My Projects</h2>
-                <p>Here are some of the projects I've worked on:</p>
-                <ul>
-                    <li><a href="https://byron-jones.itch.io/ghost-heist" target="_blank">Ghost Heist</a>
-                    <img class="project-screenshot" src="images/ghost-heist.png.png" alt="A white sphere facing a row of red spheres in a narrow corridor">
-                    <p>Ghost Heist is a 2D platformer I developed in Unity, inspired by collecting treasures in <em>Sly 2: Band of Thieves</em>. I set up guards to patrol back and forth through the levels. Players have to time their jumps to avoid the guards and reach the treasure at the end.</p>
-</li>
+
+                <ul class="project-list">
+                    <li>
+                        <h3>
+                            <a href="https://byron-jones.itch.io/ghost-heist"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Ghost Heist
+                            </a>
+                        </h3>
+
+                        <img
+                            class="project-screenshot"
+                            src="images/ghost-heist.png.png"
+                            alt="A white sphere facing a row of red spheres in a narrow corridor">
+
+                        <p>Ghost Heist is a 2D platformer I developed in Unity, inspired by collecting treasures in <em>Sly 2: Band of Thieves</em>. I set up guards to patrol back and forth through the levels. Players have to time their jumps to avoid the guards and reach the treasure at the end.</p>
+                    </li>
                 </ul>
             </section>
-                   </header>
-
-        <nav>
-            <p>Check out the links below to learn more: </p>
-            <ul>
-                <li><a href="resume.html">My Resume</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="youtube.html">YouTube</a></li>
-                <li><a href="https://www.linkedin.com/in/byron-jones-443314183/">LinkedIn</a></li>
-            </ul>
-        </nav>
         </main>
+
         <footer>
-            <p> &lt; &copy; &gt; 2026 Byron Christopher Jones</p>
+            <p>&copy; 2026 Byron Christopher Jones</p>
         </footer>
-
-    </body>
+    </div>
+</body>
 </html>
-
- 
